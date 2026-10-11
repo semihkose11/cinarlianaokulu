@@ -1,3 +1,3 @@
 <!DOCTYPE html>
 <html lang="tr"><head><meta charset="utf-8"><title>Yönlendiriliyor…</title>
-<script>var b='/'+location.pathname.split('/')[1]+'/';try{sessionStorage.setItem('spa-path',location.pathname+location.search+location.hash)}catch(e){}location.replace(b)</script></head><body></body></html>
+<script>var p=location.pathname.split('/').slice(2).join('/');var h=location.hash.slice(1);if(h)p=h;if(!p||p==='index.html')p='anasayfa';location.replace('/kadanaokulu/'+p);</script></head><body></body></html>
